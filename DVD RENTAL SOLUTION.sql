@@ -1,5 +1,5 @@
 /*This query shows the top 10 customers with Eleanor Hunt 
-spending 211.55./*
+-- spending 211.55 */
 
 ---1)TOP CUSTOMER SPENDING
 SELECT CONCAT(c.first_name,' ', c.last_name) AS full_name, c.email, SUM(p.amount) as total_spending,
@@ -11,7 +11,7 @@ ORDER BY total_spending DESC
 LIMIT 10
 
 ---2)FILM POPULARITY BY CATEGORY
-/*The top category of film is travel/*
+/*The top category of film is travel*/
 
  WITH rental_count AS ( SELECT i.film_id, count(r.rental_id) as rental
 FROM rental as r
