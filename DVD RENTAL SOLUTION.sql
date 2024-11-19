@@ -26,7 +26,7 @@ ORDER BY rc.rental DESC
 LIMIT 5
  
 ---3)STORE PERFORMANCE
-/*Store id 2 is the best performing/*
+/*Store id 2 is the best performing*/
 
 SELECT s.store_id,a.address, SUM(p.amount) AS total_revenue
 FROM payment as p 
